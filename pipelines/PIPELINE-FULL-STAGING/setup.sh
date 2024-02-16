@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -x
+
 python3 -m venv todo-list-aws
 source todo-list-aws/bin/activate
 python3 -m pip install --upgrade pip
@@ -16,9 +17,9 @@ python3 -m pip install boto3
 python3 -m pip install moto
 python3 -m pip install mock==4.0.2
 python3 -m pip install coverage==4.5.4
-python -m pip install urllib3==1.26.6
+python3 -m pip install urllib3==1.26.6
 # For HTTP requests
-python -m pip install requests
+python3 -m pip install requests
 
 =======
 
